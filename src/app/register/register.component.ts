@@ -16,7 +16,7 @@ export class RegisterComponent implements OnInit {
   loading: boolean;
   submitted = false;
 
-  onSubmit() { this.submitted = true };
+  onSubmit(): void { this.submitted = true; };
 
   get diagnostic() { return JSON.stringify(this.model); }
 
